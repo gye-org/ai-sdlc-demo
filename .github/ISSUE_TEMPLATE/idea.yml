@@ -1,0 +1,38 @@
+name: "产品灵感 / Idea"
+description: "提交产品灵感，交由 AI 进行需求入口分析。"
+title: "[Idea] "
+labels: ["stage:idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请勿填写密码、Token 或个人敏感信息。
+        自动分析仅在工作流发布到默认分支且推理认证配置完成后生效。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 目标用户与痛点
+      description: 谁遇到了什么问题？请区分实际观察和假设。
+    validations:
+      required: true
+  - type: textarea
+    id: features
+    attributes:
+      label: 期望功能
+      description: 描述最想实现的 3–5 个功能。
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: 约束与不做事项
+      description: 平台、部署方式、预算、数据范围等。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 成功标准
+      description: 怎样才能确认需求已实现？
+    validations:
+      required: true
