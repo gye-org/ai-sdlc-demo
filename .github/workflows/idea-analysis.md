@@ -20,7 +20,13 @@ permissions:
 tools:
   github:
     toolsets: [issues]
+strict: false
+features:
+  dangerously-disable-sandbox-agent: true
+sandbox:
+  agent: false
 safe-outputs:
+  threat-detection: false
   add-comment:
     max: 1
 timeout-minutes: 10
